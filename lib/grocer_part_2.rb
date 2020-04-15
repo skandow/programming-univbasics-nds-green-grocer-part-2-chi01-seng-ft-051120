@@ -37,7 +37,7 @@ def apply_clearance(cart)
     end
     cart_counter += 1
   end
-  clean_cart 
+  cart 
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
