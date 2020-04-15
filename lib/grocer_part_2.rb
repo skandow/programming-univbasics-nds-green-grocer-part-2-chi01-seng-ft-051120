@@ -30,11 +30,10 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  clean_cart = consolidate_cart(cart)
   cart_counter = 0 
   while cart_counter < clean_cart.length do 
     if clean_cart[cart_counter][:clearance] == true
-      clean_cart[cart_counter][:price] = (clean_cart[cart_counter][:price] * 0.8)
+      clean_cart[cart_counter][:price] = (clean_cart[cart_counter][:price] * 0.8).round(2)
     end
     cart_counter += 1
   end
